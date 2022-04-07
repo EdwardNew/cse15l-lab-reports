@@ -2,9 +2,9 @@ Hello, world.
 
 **Welcome** to my *fancy* website
 
-#Koalas are Cool
+# Koalas are Cool
 
-##Koalas are Great
+## Koalas are Great
 
 Learn more about Koalas [here](https://en.wikipedia.org/wiki/Koala)
 
