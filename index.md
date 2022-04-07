@@ -13,15 +13,15 @@ Here is a picture of a Koala:
 
 Here is a quote about Koalas
 > I have no fear of losing my life 
-> - if I have to save a koala or a crocodile
+> if I have to save a koala or a crocodile
 > or a kangaroo or a snake, mate,
 > I will save it.
 > -Steve Irwin
 
 3 Animals:
-*Koalas
-*Koalas
-*Koalas
+* Koalas
+* Koalas
+* Koalas
 
 Top 3 Animals:
 1. Koalas
