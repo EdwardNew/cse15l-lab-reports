@@ -1,6 +1,4 @@
-Hello, world.
-
-**Welcome** to my *fancy* website
+**Welcome** to my *fancy* website all about Koalas!
 
 # Koalas are Cool
 
