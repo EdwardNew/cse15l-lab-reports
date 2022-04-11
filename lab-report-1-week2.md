@@ -35,11 +35,25 @@
 * Open a terminal on your local client machine
     * Type in ```$ ssh cs15lsp22***@ieng6.ucsd.edu```
     * If it's the first time logging into the server, you might get a message about RSA key fingerprints, just enter ```yes``` to continue
-    * Type in your password (IT IS NORMAL TO NOT SEE YOUR PASSWORD BEING ENTERED, CONTINUE TO TYPE YOUR PASSWORD NORMALLY)
+    * Type in your password (**IT IS NORMAL TO NOT SEE YOUR PASSWORD BEING ENTERED, CONTINUE TO TYPE YOUR PASSWORD NORMALLY**)
     * You should now be logged in
     ![](images\labReport1\SshLoggedIn.jpg)
 
 <br/>
 
 ### 3. Trying Some Commands
+* Try some commands in the terminal!
+    * ```cd``` Change directory
+    * ```ls``` List files in current directory
+    * ```cp``` Copy a file to another location
+    * ```touch``` Creates an empty file
+    * ```cat``` Creates an empty file, allows you to open existing files, allows you to add to existing files
+    * ```man``` Gives details about a specific command
+    * Look [here](http://mally.stanford.edu/~sr/computing/basic-unix.html) for more commands to try
+
+![](images\labReport1\UnixCommands.jpg)
+
+<br/>
+
+### 4. Moving Files with ```scp```
 * 

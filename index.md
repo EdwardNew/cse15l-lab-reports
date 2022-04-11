@@ -1,1 +1,1 @@
-[Lab Report 1](https://edwardnew.github.io/cse15l-lab-reports/lab-report-1-week2.html)
+## [Lab Report 1](https://edwardnew.github.io/cse15l-lab-reports/lab-report-1-week2.html)
