@@ -27,13 +27,13 @@
     ![](images\labReport1\Openssh.jpg)
 
 * Look up your account [here](https://sdacs.ucsd.edu/~icc/index.php)
-    * Your username should be something like:  cs15lsp22***@ieng6.ucsd.edu
+    * Your username should be something like:  cs15lsp22~~~@ieng6.ucsd.edu
     <br/>
-    (The *** should be unique to your account)
+    (The ~~~ should be unique to your account)
 
 
 * Open a terminal on your local client machine
-    * Type in ```$ ssh cs15lsp22***@ieng6.ucsd.edu```
+    * Type in ```$ ssh cs15lsp22~~~@ieng6.ucsd.edu```
     * If it's the first time logging into the server, you might get a message about RSA key fingerprints, just enter ```yes``` to continue
     * Type in your password (**IT IS NORMAL TO NOT SEE YOUR PASSWORD BEING ENTERED, CONTINUE TO TYPE YOUR PASSWORD NORMALLY**)
     * You should now be logged in
@@ -56,4 +56,19 @@
 <br/>
 
 ### 4. Moving Files with ```scp```
+* Create or Choose an existing file in your current local/client directory
+* Type ```$ scp <filename> <remote directory file path>```
+    * Example: ```$ scp WhereAmI.java cs15lsp22atk@ieng6.ucsd.edu:~/```
+        * Moves the WhereAmI java file to the home directory of the remote machine
+* You will have to enter your password everytime you ```scp``` to authenticate yourself to the remote machine
+
+![](images\labReport1\SCP.jpg)
+
+<br/>
+
+![](images\labReport1\SCPRemote.jpg)
+
+<br/>
+
+### 5. Setting an SSH Key
 * 
