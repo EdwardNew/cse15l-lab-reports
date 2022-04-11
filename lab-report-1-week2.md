@@ -90,5 +90,23 @@
         * entered the username of your remote machine correctly
     * If it still does not work, try to create a new file named authorized_keys in the .ssh directory using the `$ touch authorized_keys` command before trying the `scp``` command again
 
+* When everything works, try logging into the remote machine. You should automatically be authenticated, no password needed.
+
+![](images\labReport1\sshkey.jpg)
+
 ### 6. Optimizing Remote Running
-* 
+* To make life even easier on us, we can reduce the amount of keystrokes needed to `scp` a file from our local/client directory to the remote directory
+* We do this by taking advantage of the fact that you can have multiple commands run on the same line
+* If you wanted to copy a file from your local machine to the remote machine, compile and run it on the remote machine, you can `scp` first, separate that command and the next with a `;`, then `ssh` into the remote machine again and compile and run the file
+    * Example: ![](images\labReport1\onelinecommand.jpg)
+    * Individual commands can be written on one line in the terminal as long as they are separated by a `;`
+    * The `scp` command only signs into the remote machine to copy the file, then logs out automatically
+        * This is why we need to `ssh` into the remote machine again to compile and run the file we copied
+    * The `ssh` command logs you into the remote machine but if followed by another command, it will log in, run the command and automatically log out again
+        * Since we want to keep this behavior but want to run more than 1 command (compile *and* run), we can enclose our commands in `" "` so the `ssh` run everything contained before it automatically logs out again
+            * Thus we have `"javac WhereAmI.java; java WhereAmI"`
+
+<br/>
+
+## Congrats!
+If you've made it this far, you're all set up to start working on the remote machine ieng6!
