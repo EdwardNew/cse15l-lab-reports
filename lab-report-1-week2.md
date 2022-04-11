@@ -71,4 +71,25 @@
 <br/>
 
 ### 5. Setting an SSH Key
+* To avoid having to enter your password everytime you ```ssh``` or ```scp```, you can create a SSH Key that authenticates your machine automatically
+* In your local/client terminal, type ```$ ssh-keygen```
+     * When prompted for what file to store the key in, enter ```/Users/<user-name>/.ssh/id_rsa```
+     * When prompted for a passphrase, just hit Enter, leaving it blank
+        * Repeat this when asked to confirm passphrase
+    * You should get a grid of symbols followed followed by a SHA-256
+    * This means your keys have been created
+* Now you need to copy your public key to the .ssh directory on the remote machine
+    * Log in to the remote machine and create a new directory called .ssh using the ```$ mkdir .ssh``` command
+    * Now go back to your local/client directory and scp the public key to the new directory you just created using:
+
+    <br/>
+
+    ```scp /Users/<user-name>/.ssh/id_rsa.pub cs15lsp22~~~@ieng6.ucsd.edu:~/.ssh/authorized_keys```
+
+    * If this does not work, makee sure you have:
+        * entered the username of your local/client machine correctly
+        * entered the username of your remote machine correctly
+    * If it still does not work, try to create a new file named authorized_keys in the .ssh directory using the ```$ touch authorized_keys``` command before trying the ```scp``` command again
+
+### 6. Optimizing Remote Running
 * 
