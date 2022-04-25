@@ -9,7 +9,7 @@
 ## Bug 1
 * ### Solution:
 ![](..\images\labReport2\bug1.jpg)
-* [Failure-inducing input](test-file1.md)
+* ### [Failure-inducing input](test-file1.md)
 * ### Symptom:
 ![](..\images\labReport2\bug1symptom.jpg)
 * ### Explaination: <br/>
@@ -19,7 +19,7 @@ In this case, the failure-inducing input was a file that contained no links in i
 ## Bug 2
 * ### Solution:
 ![](..\images\labReport2\bug2.jpg)
-* [Failure-inducing input](test-file2.md)
+* ### [Failure-inducing input](test-file2.md)
 * ### Symptom:
 ![](..\images\labReport2\bug2symptom.jpg)
 * ### Explaination: <br/>
@@ -29,7 +29,7 @@ In this case, the failure-inducing input was a file that had an image in it. Thi
 ## Bug 3
 * ### Solution:
 ![](..\images\labReport2\bug3.jpg)
-* [Failure-inducing input](test-file3.md)
+* ### [Failure-inducing input](test-file3.md)
 * ### Symptom:
 ![](..\images\labReport2\bug3symptom.jpg)
 * ### Explaination: <br/>
