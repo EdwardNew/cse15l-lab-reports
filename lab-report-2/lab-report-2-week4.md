@@ -4,7 +4,7 @@
 
 ### Below we will look at 3 bugs that were found in the MarkdownParse file and how those bugs were fixed.
 
-</br>
+<br/>
 
 ## Bug 1
 * Solution:
@@ -15,7 +15,7 @@
 * Explaination: <br/>
 In this case, the failure-inducing input was a file that contained no links in it. This caused the symptom of a StringIndexOutOfBoundsException to be outputted. The symptom is what tells the programmer that there is a bug in their code.
 
-</br>
+<br/>
 
 ## Bug 2
 * Solution:
