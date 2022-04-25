@@ -1,6 +1,6 @@
 # Connecting to the ieng6 Remote Machine
 
-![](images\labReport1\sshImg.png)
+![](..\images\labReport1\sshImg.png)
 
 ## What we will go over:
 1. Installing VS Code
@@ -12,19 +12,19 @@
 
 ### 1. Installing VS Code (For Windows)
 * Go to [https://code.visualstudio.com](https://code.visualstudio.com/)
-![](images\labReport1\downloadVSCode.jpg)
+![](..\images\labReport1\downloadVSCode.jpg)
 
 * Click on the Download button
 
 * Open the program once it is installed!
-![](images\labReport1\VSCode.jpg)
+![](..\images\labReport1\VSCode.jpg)
 
 <br/>
 
 ### 2. Remotely Connecting (Via SSH)
 * Install both OpenSSH Client and OpenSSH Server (Only for Windows)
     * Settings>Apps>Apps & Features>Optional Features>Add a Feature
-    ![](images\labReport1\Openssh.jpg)
+    ![](..\images\labReport1\Openssh.jpg)
 
 * Look up your account [here](https://sdacs.ucsd.edu/~icc/index.php)
     * Your username should be something like:  cs15lsp22~~~@ieng6.ucsd.edu
@@ -37,7 +37,7 @@
     * If it's the first time logging into the server, you might get a message about RSA key fingerprints, just enter `yes` to continue
     * Type in your password (**IT IS NORMAL TO NOT SEE YOUR PASSWORD BEING ENTERED, CONTINUE TO TYPE YOUR PASSWORD NORMALLY**)
     * You should now be logged in
-    ![](images\labReport1\SshLoggedIn.jpg)
+    ![](..\images\labReport1\SshLoggedIn.jpg)
 
 <br/>
 
@@ -51,7 +51,7 @@
     * `man` Gives details about a specific command
     * Look [here](http://mally.stanford.edu/~sr/computing/basic-unix.html) for more commands to try
 
-![](images\labReport1\UnixCommands.jpg)
+![](..\images\labReport1\UnixCommands.jpg)
 
 <br/>
 
@@ -62,11 +62,11 @@
         * Moves the WhereAmI java file to the home directory of the remote machine
 * You will have to enter your password everytime you `scp` to authenticate yourself to the remote machine
 
-![](images\labReport1\SCP.jpg)
+![](..\images\labReport1\SCP.jpg)
 
 <br/>
 
-![](images\labReport1\SCPRemote.jpg)
+![](..\images\labReport1\SCPRemote.jpg)
 
 <br/>
 
@@ -92,13 +92,13 @@
 
 * When everything works, try logging into the remote machine. You should automatically be authenticated, no password needed.
 
-![](images\labReport1\sshkey.jpg)
+![](..\images\labReport1\sshkey.jpg)
 
 ### 6. Optimizing Remote Running
 * To make life even easier on us, we can reduce the amount of keystrokes needed to `scp` a file from our local/client directory to the remote directory
 * We do this by taking advantage of the fact that you can have multiple commands run on the same line
 * If you wanted to copy a file from your local machine to the remote machine, compile and run it on the remote machine, you can `scp` first, separate that command and the next with a `;`, then `ssh` into the remote machine again and compile and run the file
-    * Example: ![](images\labReport1\onelinecommand.jpg)
+    * Example: ![](..\images\labReport1\onelinecommand.jpg)
     * Individual commands can be written on one line in the terminal as long as they are separated by a `;`
     * The `scp` command only signs into the remote machine to copy the file, then logs out automatically
         * This is why we need to `ssh` into the remote machine again to compile and run the file we copied
