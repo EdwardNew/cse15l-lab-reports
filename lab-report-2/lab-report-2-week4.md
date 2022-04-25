@@ -2,6 +2,8 @@
 
 ![](https://media.geeksforgeeks.org/wp-content/uploads/20190902105053/Debugging-Tips-To-Get-Better-At-It.png)
 
+<br/>
+
 ### Below we will look at 3 bugs that were found in the MarkdownParse file and how those bugs were fixed.
 
 <br/>
@@ -39,4 +41,5 @@ Finally, in this case, the failure-inducing input was a file that had a link at 
 
 <br/>
 
+## Conclusion
 Hopefully after reading through these examples, you have a better understanding of how bugs, the failure-inducing inputs that trigger the bugs, and the symptoms that result from bugs are related.
