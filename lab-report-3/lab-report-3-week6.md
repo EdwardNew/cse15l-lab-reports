@@ -31,7 +31,7 @@ Now that we can access the remote machine much faster, we can begin to look at s
 * Then follow this tutorial: [Generating a new key](https://docs.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
     * Your private and public keys should both be stored in the `.ssh` directory on the ieng6 machine.
     ![](..\images\labReport3\githubKeys.jpg)
-* Finally, bring everything together with this tutorial: [Adding a `ssh` key to Github](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
+* Finally, bring everything together with this tutorial: [Adding a ssh key to Github](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
 ![](..\images\labReport3\githubRemoteKey.jpg)
 
 * If everything runs correctly, then you will be able to push commits from the remote machine without needing to type in a username and password every time. 
