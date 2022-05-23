@@ -116,13 +116,15 @@ brackets, and escaped brackets? If yes, describe the code change. If not,
 describe why it would be a more involved change.
 
     **Again, I think the bug mentioned previously adds to this test failure, but
-    beyond that, I think the solution to this problem is may be more simple than
-    it seems. I think the solution is doable within 10 lines of code because you
-    would have to track the number of successive open parentheses (let that be n)
-    using some sort of counter and then you would find that number of close
-    parentheses that followed. Make that nth close parentheses the actual close
-    parentheses of the link and add the substring between the opening and close
-    parentheses to the list.**
+    beyond that, I think the solution to this problem is more complex than what
+    is doable within 10 lines of code because you would have to track the number
+    of successive open parentheses/brackets (let that be n) using some sort of
+    counter and then you would find that number of close parentheses/brackets
+    that followed. Make that nth close parentheses/bracket the actual close
+    parentheses/bracket of the link and add the substring between the opening
+    and close parentheses to the list. However, the fix for escaped brackets is
+    very simple and doable in 10 lines by just checking that the index before
+    every bracket is not `\`.**
 
 - Do you think there is a small (<10 lines) code change that will make your
 program work for snippet 3 and all related cases that have newlines in brackets
