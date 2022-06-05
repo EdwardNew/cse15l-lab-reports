@@ -2,10 +2,10 @@
 
 ![](..\images\labReport5\vimLogo.jpg)
 
-This week we will be comparing two implementations of MarkdownParser against a very large set of test files. We will attept to see how the outputs of the implementations differ, which implementation produces the correct output (if any), and how we can improve each implementation so that they produce the correct output.
+This week we will be comparing two implementations of MarkdownParser against a very large set of test files. We will attempt to see how the outputs of the implementations differ, which implementation produce the correct output (if any), and how we can improve each implementation so that they produce the correct output.
 
 # Differences
-In this report, we will be looking at two test files in particular which produced different outputs from the two implementations. We were able to find that these tests produced different outputs by using the `vimdiff` command to compare how the output files produced after running `bash script.sh > results.txt` differ with each other.
+In this report, we will be looking at two test files in particular which produce different outputs between the two implementations. We were able to find that these tests producee different outputs by using the `vimdiff` command to compare how the output files produced after running `bash script.sh > results.txt` differ with each other.
 
 ![](..\images\labReport5\vimdiff.jpg)
 
@@ -14,12 +14,14 @@ We will be focusing on the test files `41.md` and `577.md` in particular.
 ## Links to test files:
 41.md: [https://github.com/nidhidhamnani/markdown-parser/blob/main/test-files/41.md](https://github.com/nidhidhamnani/markdown-parser/blob/main/test-files/41.md)
 
-577.md: [https://github.com/nidhidhamnani/markdown-parser/blob/main/test-files/567.md?plain=1](https://github.com/nidhidhamnani/markdown-parser/blob/main/test-files/567.md?plain=1)
+577.md: [https://github.com/nidhidhamnani/markdown-parser/blob/main/test-files/577.md?plain=1](https://github.com/nidhidhamnani/markdown-parser/blob/main/test-files/577.md?plain=1)
 
 # Test file 41.md
-For this test file, both my own, and the given implementations of MarkdownParse produces an incorrect output.
+For this test file, both my own, and the given implementations of MarkdownParse produce an incorrect output.
 
 ### Expected Output: `[url]`
+The output for this test file based on VS Code preview should be `[url]` because the `"tit"` part of the link is actually a title for the link that is not part of the actual link. It is the text that will appear in the tooltip as you hover over the link.
+
 ![](..\images\labReport5\41Expected.jpg)
 
 ### Output of my implementation: `[url "tit"]`
@@ -36,7 +38,7 @@ To fix this, we can add an if statement to check if the potential link we are ab
 ### Output of given implementation: `[]`
 ![](..\images\labReport5\given41Output.jpg)
 
-The problem with the given implementation of MarkdownParse is that it also does not account for the possibility of a title for a link. However, it does not add the link to the list entirely because it checks if a potential link contains a space in it. This is normally invalid, but when a title is added, spaces are allowed within the parentheses.
+The problem with the given implementation of MarkdownParse is that it also does not account for the possibility of adding a title for a link. However, it does not add the link to the list entirely because it checks if a potential link contains a space in it. This is normally invalid, but when a title is added, spaces are allowed within the parentheses.
 
 To fix this, we can also implement an if statement that checks for a set of quotation marks within the brackets.
 
